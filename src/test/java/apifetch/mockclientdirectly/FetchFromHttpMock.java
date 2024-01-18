@@ -20,10 +20,10 @@ class FetchFromHttpMock {
     // dont' do this!!!
     @Test
     void fetchFromApi() throws IOException, InterruptedException {
-        HttpResponse response = mock(HttpResponse.class);
-        when(response.body()).thenReturn(response);
+        HttpResponse httpResponse = mock(HttpResponse.class);
+        when(httpResponse.body()).thenReturn(response);
         HttpClient mockClient = mock(HttpClient.class);
-        when(mockClient.send(any(), any())).thenReturn(response);
+        when(mockClient.send(any(), any())).thenReturn(httpResponse);
         var peopleApiService = new BPeopleApiService(mockClient);
 
         var result = peopleApiService.peopleWithEyeColor("blue");
