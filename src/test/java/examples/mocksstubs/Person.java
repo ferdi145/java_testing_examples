@@ -1,3 +1,5 @@
+package examples.mocksstubs;
+
 public class Person {
     public Person() {
     }

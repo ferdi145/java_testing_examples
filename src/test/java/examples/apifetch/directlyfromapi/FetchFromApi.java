@@ -1,4 +1,4 @@
-package apifetch.directlyfromapi;
+package examples.apifetch.directlyfromapi;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

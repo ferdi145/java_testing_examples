@@ -1,4 +1,4 @@
-package apifetch;
+package examples.apifetch;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -7,10 +7,9 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.ArrayList;
 import java.util.List;
 
-import static apifetch.API.BASE_URL;
+import static examples.apifetch.API.BASE_URL;
 
 public class PeopleClient {
     private final HttpClient client;

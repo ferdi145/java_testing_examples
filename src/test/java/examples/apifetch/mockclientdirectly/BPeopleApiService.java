@@ -1,8 +1,7 @@
-package apifetch.directlyfromapi;
+package examples.apifetch.mockclientdirectly;
 
-import apifetch.PeopleClient;
-import apifetch.Result;
-import apifetch.Root;
+import examples.apifetch.Result;
+import examples.apifetch.Root;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -14,13 +13,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static apifetch.API.BASE_URL;
+import static examples.apifetch.API.BASE_URL;
 
-public class APeopleApiService {
+public class BPeopleApiService {
     private final HttpClient client;
 
-    public APeopleApiService() {
-        this.client = HttpClient.newHttpClient();
+    public BPeopleApiService(HttpClient httpClient) {
+        this.client = httpClient;
     }
 
     public List<String> peopleWithEyeColor(String eyeColor) {

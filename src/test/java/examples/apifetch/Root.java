@@ -1,4 +1,4 @@
-package apifetch;
+package examples.apifetch;
 
 import java.util.ArrayList;
 

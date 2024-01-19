@@ -1,7 +1,7 @@
-package apifetch.mockwrapped;
+package examples.apifetch.mockwrapped;
 
-import apifetch.PeopleClient;
-import apifetch.Result;
+import examples.apifetch.PeopleClient;
+import examples.apifetch.Result;
 
 import java.io.IOException;
 import java.util.Collections;

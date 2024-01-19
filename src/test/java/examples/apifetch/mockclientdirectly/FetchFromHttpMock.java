@@ -1,6 +1,5 @@
-package apifetch.mockclientdirectly;
+package examples.apifetch.mockclientdirectly;
 
-import apifetch.mockclientdirectly.BPeopleApiService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
